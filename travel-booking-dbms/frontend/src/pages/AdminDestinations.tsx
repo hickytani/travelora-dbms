@@ -1,0 +1,2 @@
+import AdminCrud from './AdminCrud'; import { destinationApi } from '../services/api';
+export default function AdminDestinations(){return <AdminCrud title="Manage destinations" api={destinationApi} idKey="destination_id" fields={[{key:'city',label:'City',required:true},{key:'country',label:'Country',required:true},{key:'description',label:'Description'},{key:'climate',label:'Climate'},{key:'best_season',label:'Best season'}]} columns={['city','country','climate','best_season']}/>}
