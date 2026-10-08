@@ -1,0 +1,2 @@
+import AdminCrud from './AdminCrud'; import { flightApi } from '../services/api';
+export default function AdminFlights(){return <AdminCrud title="Manage flights" api={flightApi} idKey="flight_id" fields={[{key:'airline',label:'Airline',required:true},{key:'departure',label:'Departure',required:true},{key:'arrival',label:'Arrival',required:true},{key:'departure_time',label:'Departure time',type:'time'},{key:'arrival_time',label:'Arrival time',type:'time'}]} columns={['airline','departure','arrival','departure_time','arrival_time']}/>}

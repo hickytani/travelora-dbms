@@ -1,0 +1,2 @@
+import AdminCrud from './AdminCrud'; import { packageApi } from '../services/api';
+export default function AdminPackages(){return <AdminCrud title="Manage packages" api={packageApi} idKey="package_id" fields={[{key:'title',label:'Title',required:true},{key:'duration',label:'Duration (days)',type:'number',required:true},{key:'price',label:'Price',type:'number',required:true},{key:'category',label:'Category'},{key:'destination_id',label:'Destination ID',type:'number',required:true}]} columns={['title','duration','price','category','destination_id']}/>}

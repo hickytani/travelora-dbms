@@ -1,0 +1,2 @@
+import AdminCrud from './AdminCrud'; import { hotelApi } from '../services/api';
+export default function AdminHotels(){return <AdminCrud title="Manage hotels" api={hotelApi} idKey="hotel_id" fields={[{key:'hotel_name',label:'Hotel name',required:true},{key:'rating',label:'Rating',type:'number'},{key:'location',label:'Location'},{key:'price_per_night',label:'Price per night',type:'number',required:true}]} columns={['hotel_name','rating','location','price_per_night']}/>}
